@@ -1,45 +1,39 @@
 # Hello World
 
-## Goal
+A simple Java program that prints `Hello, World!` to the console.
 
-Write your first Java program and learn the basic structure of a Java application.
+## Project Structure
 
-## Concepts
-
-- Java
-- Programming fundamentals
-- Problem solving
+```text
+.
+├── HelloWorld.java
+└── README.md
+```
 
 ## Requirements
 
-- JDK 17+
-- Terminal
-- Git
+* Java Development Kit (JDK)
 
-## Run
+## How to Run
 
-Compile:
+Compile the Java file:
 
 ```bash
-javac Main.java
+javac HelloWorld.java
 ```
 
-Run:
+Run the program:
 
 ```bash
-java Main
+java HelloWorld
 ```
 
-## Tasks
+## Output
 
-1. Implement the basic solution.
-2. Test normal cases.
-3. Test edge cases.
-4. Refactor the code.
-5. Add useful comments where necessary.
+```text
+Hello, World!
+```
 
-## What I Learned
+## License
 
-- 
-- 
-- 
+This project is for educational purposes.
