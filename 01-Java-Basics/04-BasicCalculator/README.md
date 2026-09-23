@@ -2,44 +2,39 @@
 
 ## Goal
 
-Create a calculator for addition, subtraction, multiplication, and division.
+Create a simple calculator that performs the four basic arithmetic operations:
 
-## Concepts
+* Addition (`+`)
+* Subtraction (`-`)
+* Multiplication (`*`)
+* Division (`/`)
 
-- Java
-- Programming fundamentals
-- Problem solving
+## Example
 
-## Requirements
-
-- JDK 17+
-- Terminal
-- Git
-
-## Run
-
-Compile:
-
-```bash
-javac Main.java
+```text
+Enter first number: 10
+Enter an operator (+, -, *, /): *
+Enter second number: 5
+Result: 50.0
 ```
 
-Run:
+## How to Run
+
+Compile the program:
 
 ```bash
-java Main
+javac BasicCalculator.java
 ```
 
-## Tasks
+Run the program:
 
-1. Implement the basic solution.
-2. Test normal cases.
-3. Test edge cases.
-4. Refactor the code.
-5. Add useful comments where necessary.
+```bash
+java BasicCalculator
+```
 
-## What I Learned
+## Features
 
-- 
-- 
-- 
+* Reads two numbers from the user
+* Supports four arithmetic operations
+* Handles division by zero
+* Handles invalid operators
