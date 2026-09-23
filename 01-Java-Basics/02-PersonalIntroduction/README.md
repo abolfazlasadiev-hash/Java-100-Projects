@@ -2,44 +2,32 @@
 
 ## Goal
 
-Print a person's name, age, city, and other basic information.
+Create a simple Java program that prints a person's basic information, including:
 
-## Concepts
+* Name
+* Age
+* City
+* Other personal details
 
-- Java
-- Programming fundamentals
-- Problem solving
+## Example Output
 
-## Requirements
-
-- JDK 17+
-- Terminal
-- Git
-
-## Run
-
-Compile:
-
-```bash
-javac Main.java
+```text
+Name: Alex
+Age: 25
+City: Tehran
+Occupation: Student
 ```
 
-Run:
+## How to Run
+
+Compile the program:
 
 ```bash
-java Main
+javac PersonalIntroduction.java
 ```
 
-## Tasks
+Run it:
 
-1. Implement the basic solution.
-2. Test normal cases.
-3. Test edge cases.
-4. Refactor the code.
-5. Add useful comments where necessary.
-
-## What I Learned
-
-- 
-- 
-- 
+```bash
+java PersonalIntroduction
+```
