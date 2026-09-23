@@ -2,44 +2,26 @@
 
 ## Goal
 
-Read two numbers and calculate their sum.
+Read two numbers from the user and calculate their sum.
 
-## Concepts
+## Example
 
-- Java
-- Programming fundamentals
-- Problem solving
-
-## Requirements
-
-- JDK 17+
-- Terminal
-- Git
-
-## Run
-
-Compile:
-
-```bash
-javac Main.java
+```text
+Enter first number: 10
+Enter second number: 20
+Sum: 30
 ```
 
-Run:
+## How to Run
+
+Compile the program:
 
 ```bash
-java Main
+javac SumTwoNumbers.java
 ```
 
-## Tasks
+Run the program:
 
-1. Implement the basic solution.
-2. Test normal cases.
-3. Test edge cases.
-4. Refactor the code.
-5. Add useful comments where necessary.
-
-## What I Learned
-
-- 
-- 
-- 
+```bash
+java SumTwoNumbers
+```
