@@ -1,50 +1,37 @@
-import java.util.Scanner;
-
 public class BasicCalculator {
 
-  public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+    public double calculate(double firstNumber, char operator, double secondNumber) {
 
-    System.out.print("Enter first number: ");
-    double firsNumber = scanner.nextDouble();
+        double result;
 
-    System.out.print("Enter an opretor (+, -, *. / ): ");
-    char operator = scanner.next().charAt(0);
+        switch (operator) {
 
-    System.out.print("Enter secondNumber number: ");
-    double secondNumber = scanner.nextDouble();
+            case '+':
+                result = firstNumber + secondNumber;
+                break;
 
-    double result;
+            case '-':
+                result = firstNumber - secondNumber;
+                break;
 
-    switch (operator) {
-      case '+':
-        result = firsNumber + secondNumber;
-        break;
+            case '*':
+                result = firstNumber * secondNumber;
+                break;
 
-      case '-':
-        result = firsNumber + secondNumber;
-        break;
+            case '/':
+                if (secondNumber == 0) {
+                    System.out.println("Error: Cannot divide by zero.");
+                    return 0;
+                }
 
-      case '*':
-        result = firsNumber * secondNumber;
-        break;
+                result = firstNumber / secondNumber;
+                break;
 
-      case '/':
-        if (secondNumber == 0) {
-          System.out.println("Error: Cannot divide by zero.");
-          scanner.close();
-          return;
-
+            default:
+                System.out.println("Error: Invalid operator.");
+                return 0;
         }
-        result = firsNumber / secondNumber;
-        break;
-        default:
-          System.out.println("Error: Invalid operator.");
-          scanner.close();
-          return;
-    }
-    System.out.println("Result: " + result);
 
-    scanner.close();
-  }
+        return result;
+    }
 }

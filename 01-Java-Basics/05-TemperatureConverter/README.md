@@ -4,42 +4,45 @@
 
 Convert temperatures between Celsius and Fahrenheit.
 
-## Concepts
+## Features
 
-- Java
-- Programming fundamentals
-- Problem solving
+* Convert Fahrenheit to Celsius
+* Convert Celsius to Fahrenheit
+* Read temperature and conversion type from the user
+* Handle invalid conversion units
 
-## Requirements
+## Formulas
 
-- JDK 17+
-- Terminal
-- Git
+**Celsius to Fahrenheit:**
 
-## Run
-
-Compile:
-
-```bash
-javac Main.java
+```text
+°F = (°C × 9/5) + 32
 ```
 
-Run:
+**Fahrenheit to Celsius:**
 
-```bash
-java Main
+```text
+°C = (°F - 32) × 5/9
 ```
 
-## Tasks
+## Example
 
-1. Implement the basic solution.
-2. Test normal cases.
-3. Test edge cases.
-4. Refactor the code.
-5. Add useful comments where necessary.
+```text
+Enter temperature: 100
+Convert to (C/F): F
+Temperature in Fahrenheit: 212.0°F
+```
 
-## What I Learned
+## How to Run
 
-- 
-- 
-- 
+Compile the program:
+
+```bash
+javac TemperatureConverter.java
+```
+
+Run the program:
+
+```bash
+java TemperatureConverter
+```
