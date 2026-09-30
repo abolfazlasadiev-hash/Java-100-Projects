@@ -2,37 +2,16 @@
 
 ## Goal
 
-Build a simple temperature converter using **Object-Oriented Programming (OOP)** in Java.
-
-The program converts temperatures between Celsius and Fahrenheit and separates the conversion logic from the `main` method.
+Convert temperatures between Celsius and Fahrenheit using a Java method.
 
 ## Features
 
 * Convert Celsius to Fahrenheit
 * Convert Fahrenheit to Celsius
 * Read temperature from the user
-* Read the conversion type from the user
+* Read conversion type from the user
+* Use a separate method for temperature conversion
 * Handle invalid conversion units
-* Use a separate class for temperature conversion
-* Use methods to organize the conversion logic
-
-## OOP Concepts
-
-This project demonstrates:
-
-* **Class** — `TemperatureConverter`
-* **Object** — An instance of `TemperatureConverter`
-* **Methods** — Separate methods for each conversion
-* **Encapsulation of Logic** — Conversion logic is separated from `Main`
-* **Exception Handling** — Invalid conversion units are handled with `IllegalArgumentException`
-
-## Project Structure
-
-```text
-TemperatureConverter/
-├── Main.java
-└── TemperatureConverter.java
-```
 
 ## Formulas
 
@@ -56,43 +35,45 @@ Convert to (C/F): F
 Temperature in Fahrenheit: 212.0°F
 ```
 
-Another example:
-
-```text
-Enter temperature: 32
-Convert to (C/F): C
-Temperature in Celsius: 0.0°C
-```
-
 ## How It Works
 
-The `Main` class is responsible for:
+The program has two main parts:
 
-1. Reading input from the user
-2. Creating a `TemperatureConverter` object
-3. Calling the appropriate conversion method
-4. Displaying the result
+### `convertTemperature()`
 
-The `TemperatureConverter` class is responsible for:
+This method receives:
 
-* Celsius-to-Fahrenheit conversion
-* Fahrenheit-to-Celsius conversion
-* Validating the conversion unit
+* Temperature
+* Conversion unit
 
-Example:
+Then it performs the appropriate calculation and returns the result.
 
 ```java
-TemperatureConverter converter = new TemperatureConverter();
+double result = convertTemperature(temperature, unit);
+```
 
-double result = converter.convert(100, 'F');
+### `main()`
+
+The `main` method:
+
+1. Gets the temperature from the user.
+2. Gets the conversion type.
+3. Calls `convertTemperature()`.
+4. Displays the result.
+
+## Project Structure
+
+```text
+TemperatureConverter/
+└── Main.java
 ```
 
 ## How to Run
 
-Compile both Java files:
+Compile the program:
 
 ```bash
-javac Main.java TemperatureConverter.java
+javac Main.java
 ```
 
 Run the program:
@@ -103,19 +84,18 @@ java Main
 
 ## Learning Objectives
 
-After completing this project, you should understand:
+This project helps practice:
 
-* How to create a Java class
-* How to create an object
-* How to define and call methods
-* How to pass parameters to methods
-* How to return values from methods
-* How to separate program responsibilities
-* How to handle invalid input with exceptions
+* Java Methods
+* Method parameters
+* Return values
+* `if / else if / else`
+* `Scanner`
+* Basic mathematical calculations
+* Calling a method from `main`
 
 ## Technologies
 
 * Java
-* Object-Oriented Programming (OOP)
+* Java Methods
 * `Scanner`
-* Exception Handling
